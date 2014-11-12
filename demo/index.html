@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta http-equiv="Cache-control" content="public">
+<title>Skeleton (CSS) | Responsive (CSS) Framework</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href="http://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+
+<!--[if gte IE 9]>
+	<style type="text/css">
+		.gradient { filter: none; }
+	</style>
+<![endif]-->
+<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+	<div class="resize"></div>
+	<div id="container" class="container">
+		<div class="sixteen columns inner">
+			<header>
+				<h1>Skeleton (CSS)</h1>
+				<h2>"A (CSS), SCSS, &amp; Compass translation of Dave Gamache's Skeleton responsive CSS grid that has been (CSS)ified to make it even more awesome."<small>&mdash; Dennis Thompson (Skeleton (CSS) Creator)</small></h2>
+			</header>
+			<section id="downloads" class="clearfix">
+				<a href="demo.html" id="view-demo" class="button"><span>View Demo</span></a>
+				<a href="https://github.com/atomicpages/skeleton-sass/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+				<a href="https://github.com/atomicpages/skeleton-sass/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+				<a href="https://github.com/atomicpages/skeleton-sass" id="view-on-github" class="button"><span>View on GitHub</span></a>
+			</section>
+		</div>
+
+		<div class="sixteen columns wrapper">
+			<div class="four columns alpha sidebar">
+				<aside id="left_sidebar">
+					<h4>Resources</h4>
+					<ul>
+						<li><a href="https://github.com/atomicpages/skeleton-sass/wiki/Installing-Sass">Installing Sass</a></li>
+						<li><a href="https://github.com/atomicpages/skeleton-sass/wiki/Installing-Compass">Installing Compass</a></li>
+						<li><a href="https://github.com/atomicpages/skeleton-sass/wiki/Setting-up-a-Fluid-Grid">Setting up a Fluid Grid</a></li>
+					</ul>
+					<br>
+					<h4>Documentation</h4>
+					<ul>
+						<li><a href="https://github.com/atomicpages/skeleton-sass/wiki">Intro to Skeleton Sass</a></li>
+						<li><a href="https://github.com/atomicpages/skeleton-sass/wiki/Mixin-Documentation">Mixins</a></li>
+						<li><a href="https://github.com/atomicpages/skeleton-sass/wiki/Function-Documentation">Functions</a></li>
+						<li><a href="https://github.com/atomicpages/skeleton-sass/wiki/Variable-Documentation">Variables</a></li>
+					</ul>
+				</aside>
+			</div>
+
+			<div class="twelve columns omega content">
+				<section id="main_content">
+					<h2>Skeleton (CSS)</h2>
+					<p>Skeleton (CSS) is a (CSS)ification of Dave Gamache's <a href="http://getskeleton.com" target="_blank" rel="nofollow">Skeleton CSS</a> responsive front-end framework</p>
+
+					<h3>Features</h3>
+					<ol>
+						<li>(CSS)ified Skeleton CSS Framework</li>
+						<li>Dependence on <em>three</em> files</li>
+						<li>Separation of variables, functions, and mixins to keep code <strong>DRY</strong></li>
+						<li>Choose your favorite syntax
+							<ul>
+								<li><code>.(CSS)</code> indented-style syntax</li>
+								<li>Compass optional available, uses <code>compass/css3</code> library only</li>
+								<li><code>.scss</code> "sassy css" syntax (with and without Compass)</li>
+								<li>Compass optional available, uses <code>compass/css3`</code> library only</li>
+							</ul>
+						</li>
+					</ol>
+
+					<h3>How to Use</h3>
+					<p>Using Skeleton (CSS) is very easy and consists of you running a few terminal commands or by using a GUI-based application.</p>
+
+					<p>Skeleton (CSS) is separated into four different flavors</p>
+					<ul>
+						<li><a href="https://github.com/atomicpages/skeleton-sass/tree/master/compass/scss" target="_blank">Compass SCSS</a></li>
+						<li><a href="https://github.com/atomicpages/skeleton-sass/tree/master/compass/sass" target="_blank">Compass Sass</a></li>
+						<li><a href="https://github.com/atomicpages/skeleton-sass/tree/master/sass/scss" target="_blank">Non-compass SCSS</a></li>
+						<li><a href="https://github.com/atomicpages/skeleton-sass/tree/master/sass/sass" target="_blank">Non-compass Sass</a></li>
+					</ul>
+
+					<h5>Application</h5>
+					<ul>
+						<li><a href="http://mhs.github.io/scout-app/" target="_blank" rel="nofollow">Scout (Free)</a></li>
+						<li><a href="http://compass.handlino.com/" target="_blank" rel="nofollow">Compass.app (Paid)</a></li>
+					</ul>
+
+					<h5>Command Line</h5>
+					<ol>
+						<li>Create a new directory in your web project called <code>(CSS)</code></li>
+						<li>Copy &amp; Paste your desired flavor or Skeleton (CSS) into the newly created <code>(CSS)</code> directory</li>
+						<li>Compile files for the first time:
+							<ol>
+								<li>Open Terminal/Command Prompt with Ruby</li>
+								<li><code>cd path/to/my/project/(CSS)</code></li>
+								<li><code>(CSS) --update (CSS):css</code></li>
+								<li><strong>Note:</strong> if you use the Compass version issue the following: <br><code>(CSS) --update --compass sass:css</code></li>
+							</ol>
+						</li>
+						<li>Link files in the following order inside your source code:
+							<ol>
+								<li><code>skeleton.css</code></li>
+								<li><code>base.css</code></li>
+								<li><code>layout.css</code></li>
+							</ol>
+						</li>
+						<li>Add the following to the head section of your HTML document (see code example): <br><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"&gt;</code></li>
+					</ol>
+
+					<h5></h5>
+					<div class="code-wrap">
+						<p><a href="#">Code Sample</a></p>
+					</div>
+
+					<h3>Included Files</h3>
+					<ul>
+						<li><code>index.html</code> which includes a starter page showcasing the various features of the framework</li>
+						<li><code>demo.html</code> which outlines the inherited styling that this framework offers. See this file for additional information on its uses.</li>
+						<li><code>skeleton.scss</code> which contains the responsive styles for the framework. You should never edit this file directly unless you know exactly what you're changing! Note: this file DOES contain an editable function that changes the grid. See file for additional information.</li>
+						<li><code>layout.scss</code> is an optional file where you can add custom styles and extend the framework.</li>
+						<li>base.scss an optional file which contains all of the default typography styles, page styles, and much more.</li>
+						<li><code>_mixins.scss</code> is a <em>private file</em> (CSS) file that is meant to be included but not rendered into its own css file. See this file for the uses.</li>
+						<li><code>_functions.scss</code> is a <em>private file</em> that contains the function that generates the grid for the framework. Feel free to change the grid in skeleton.scss to suit your needs!</li>
+						<li><code>_vars.scss</code> is a <em>private file</em> the contains all of the global variables that the framework uses. Feel free to change and add your own! See file for additional information.</li>
+					</ul>
+
+					<h3>License</h3>
+					<p>This project is released under the MIT license.</p>
+
+					<h3>Find a Bug?</h3>
+					<ul>
+						<li>Submit a pull request</li>
+						<li>Create a new issue on the <a href="https://github.com/atomicpages/skeleton-sass/">Skeleton-Sass page</a></li>
+					</ul>
+
+					<h3>Changelog</h3>
+					<section class="changelog first">
+						<h5>1.6.2</h5>
+						<ul>
+							<li>Added local configuration file that won't be overridden when updating with bower.</li>
+							<li>Updated <code>bower.json</code> to exclude <code>demo</code> and development files from being installed with bower</li>
+						</ul>
+					</section>
+				</section>
+			</div><!-- /.content -->
+		</div>
+		<div class="sixteen columns footer">
+			<footer>
+				<h6>Skeleton Sass is maintained by <a href="http://dennis-thompson.com/">Dennis Thompson</a> | <a href="http://www.atomicpages.net/">AtomicPages LLC</a></h6>
+			</footer>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('aside a').hover(
+				function() { $(this).stop(true, true).animate({ backgroundColor: 'rgba(0, 0, 0, 0.4)'}, 200); },
+				function() { $(this).stop(true, true).animate({ backgroundColor: 'rgba(0, 0, 0, 0.2)'}, 200); }
+			);
+			$('.code-wrap .gist').hide();
+			$('.code-wrap').click(function(e) {
+				e.preventDefault();
+				$(this).children('.gist').slideToggle();
+			});
+		});
+	</script>
+</body>
+</html>
