@@ -5,8 +5,24 @@ module.exports = function(grunt) {
 		pkg: grunt.file.readJSON('package.json'),
 
 		// 2. All functions go here.
-		
-		// watch: {
+		concat: {
+			scripts: {
+				src: [
+					'js-dev/*.js'
+				],
+				dest: 'js/script.js',
+			}
+		},
+//		uglify: {
+// 			scripts: {
+// 				expand: true,
+// 				cwd: 'js',
+// 				src: ['*.js', '!*.min.js'],
+// 				dest: 'js',
+// 				ext: '.min.js'
+// 			}
+// 		},
+// 		watch: {
 // 			grunt: {
 // 				files: [ 'Gruntfile.js'],
 // 				options: {
@@ -16,7 +32,6 @@ module.exports = function(grunt) {
 // 			scripts: {
 // 				files: [
 // 				'js-dev/*.js',
-// 				'js/libs/**/*.js'
 // 				],
 // 				tasks: ['concat', 'uglify'],
 // 				options: {
@@ -31,30 +46,6 @@ module.exports = function(grunt) {
 // 				options: {
 // 					spawn: false,
 // 				}
-// 			}
-// 		},
-		concat: {
-			scripts: {
-				src: [
-					'js-dev/*.js'
-				],
-				dest: 'js/script.js',
-			}
-		},
-// 		uglify: {
-// 			scripts: {
-// 				expand: true,
-// 				cwd: 'js',
-// 				src: ['*.js', '!*.min.js'],
-// 				dest: 'js',
-// 				ext: '.min.js'
-// 			},
-// 			vendor: {
-// 				expand: true,
-// 				cwd: 'js/vendor',
-// 				src: ['**/*.js', '!**/*.min.js'],
-// 				dest: 'js/vendor',
-// 				ext: '.min.js'
 // 			}
 // 		},
 // 		sass: {
