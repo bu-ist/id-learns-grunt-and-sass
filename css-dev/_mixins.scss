@@ -1,0 +1,26 @@
+// Clear floats 
+// Usage: "@include clearfix;"
+@mixin clearfix {
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+// Border radius
+// Usage: polyfill vendor extensions with "@include border-radius(10px);"
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	   -moz-border-radius: $radius;
+	    -ms-border-radius: $radius;
+	        border-radius: $radius;
+}
+// Transitions
+// Usage: polyfill vendor extensions with "@include transition(all, 250ms, ease-in-out, 0s);"
+@mixin transition($transition-property, $transition-time, $method, $transition-delays) {
+	-webkit-transition: $transition-property $transition-time $method $transition-delays;
+	   -moz-transition: $transition-property $transition-time $method $transition-delays;
+	    -ms-transition: $transition-property $transition-time $method $transition-delays;
+	     -o-transition: $transition-property $transition-time $method $transition-delays;
+	        transition: $transition-property $transition-time $method $transition-delays;
+}
